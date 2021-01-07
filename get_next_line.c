@@ -92,8 +92,7 @@ int			get_next_line(int fd, char **line)
 		{
 			*check_bsn = '\0';
 			cpy = ost;
-			if ((!(ost = ft_strdup(++check_bsn))))
-				return (-1);
+			ost = ft_strdup(++check_bsn);
 			free(cpy);
 		}
 		cpy = *line;
