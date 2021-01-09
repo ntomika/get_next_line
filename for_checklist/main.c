@@ -32,12 +32,12 @@ int main()
 	{
 		printf("%d : ", rez);
 		printf("%s\n", line);
+		free(line);
 	}
 	printf("%d : ", rez);
 	printf("%s\n", line);
+	free(line);
 
-	while (1)
-		;
 	return (0);
 }
 
